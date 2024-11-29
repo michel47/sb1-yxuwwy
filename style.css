@@ -1,0 +1,133 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.password-input {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  padding-right: 2.5rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.visibility-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 0;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.key {
+  position: relative;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.key:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.key-alternatives {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  right: 0;
+  font-size: 0.6rem;
+  color: #666;
+}
+
+.key-main {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.keypad-controls {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.shift {
+  background: #ffd700;
+}
+
+.shift-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.shift-container span {
+  cursor: pointer;
+}
+
+.backspace {
+  background: #ff4444;
+  color: white;
+}
+
+.gauge-container {
+  margin: 2rem 0;
+}
+
+.feedback-container {
+  color: #666;
+  font-size: 0.9rem;
+}
